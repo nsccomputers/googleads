@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSC Computers - Media Gallery</title>
+    <meta name="description" content="Official media gallery for NSC Computers, featuring our corporate brand logo and profile of the business owner.">
+    
+    <!-- CRITICAL SEARCH CONSOLE FIXES -->
+    <link rel="canonical" href="https://www.nsccomputers.jo3.org/nscgallery.html" />
+    <meta name="robots" content="index, follow">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: #0056b3;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .intro-text {
+            color: #555;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto; 
+            }
+ .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Use cover if you want images to fill completely */
+    display: block;
+}
+
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        .gaery-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+        .item-info {
+            padding: 20px;
+        }
+        .item-info h3 {
+            margin: 0 0 8px 0;
+            color: #222;
+            font-size: 1.3rem;
+        }
+        .item-info p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* POPUP LIGHTBOX SYSTEM */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .lightbox-img {
+            max-width: 85%;
+            max-height: 75vh;
+            border-radius: 4px;
+            box-shadow: 0 0 25px rgba(255,255,255,0.1);
+        }
+        .lightbox-caption {
+            color: #fff;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 80%;
+        }
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .close-btn:hover { color: #bbb; }
+
+        /* FOOTER NAVIGATION MAP */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 0.95rem;
+        }
+        footer a {
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <div class="container">
+        <header>
+            <h1>NSC Computers Gallery</h1>
+            <p class="intro-text">
+                Official profile verification media. View our corporate brand symbol along with leadership credentials.
+            </p>
+        </header>
+
+        <!-- PHOTO GRID BLOCK (Exactly two items) -->
+        <main class="gallery-item">
+            
+            <!-- Item 1: Logo -->
+            <br>
+                <img src="./Screenshot_2026-07-28-06-09-36-007~2.jpeg" alt="NSC Computers Smart Software https             <div class="item-info">
+                    <h3>Official Brand Logo</h3>
+                    <p>The signature identity mark of NSC Computers ERP software systems.</p>
+                </div>
+        
+
+            <!-- Item 2: Owner -->
+            <div class="gallery-item" onclick="openLightbox('./hphoto.jpg', 'Business Owner Profile - NSC Computers')">
+               <br>
+                <img src="./hphoto.jpg" alt="NSC Computers Business Owner Executive Profile Photo">
+                <div class="item-info">
+                    <h3>Company Leadership</h3>
+                    <p>Executive management directing local business software operations.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- NAVIGATION WITH NO TARGET_BLANK (Opens in same window) -->
+        <footer>
+            <a href="./aboutgp.html">System Architecture Profile</a>.</p>
+            <p>&copy; 2026 NSC Computers. Engineered for Professional System Management.</p>
+        </footer>
+    </div>
+
+    <!-- LIGHTBOX ELEMENTS -->
+    <div id="customLightbox" class="lightbox">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-img" id="lightboxTargetImg" src="" alt="Expanded View">
+        <div class="lightbox-caption" id="lightboxTargetCaption"></div>
+    </div>
+</center>
+    <!-- RESPONSIVE POPUP LIGHTBOX LOGIC -->
+    <script>
+        function openLightbox(imgSrc, captionText) {
+            document.getElementById('lightboxTargetImg').src = imgSrc;
+            document.getElementById('lightboxTargetCaption').textContent = captionText;
+            document.getElementById('customLightbox').style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            document.getElementById('customLightbox').style.display = 'none';
+        }
+
+        // Close lightbox if user hits escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === "Escape") closeLightbox();
+        });
+    </script>
+
+</body>
+</html>

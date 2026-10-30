@@ -1,0 +1,5 @@
+always talks with me in simple code format.
+if response exceed 10000 characters ,break answer in multiple reponses asking me for next part.
+i want detailed index for studying computer hardware and networking related all problems that can arrive to software developer that uses vb6,vb.net,vfp9 ,vfp6. provide from beginning in a flow,like core novel book. also provide all ways for networking,speed management ,etc needed or that can be involved.
+i am study lover so include as much as you can ,with no intendation and consice in writing. Everything in detail from begining. Also search web.
+

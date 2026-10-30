@@ -1,0 +1,353 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NSC COMPUTERS provides ERP, WINDOW BASED, USER DEFINED,HIGHLY FLEXIBLE, UPGRADED software solutions for any type of businesses.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.nsccomputers.jo3.org/loadingtonsc.html" />
+
+    <title>NSC Computers, WAIT FOR A WHILE! | Gateway To NSC COMPUTERS</title>
+    <style>
+        /* Cross-browser compatible layout reset */
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f8fafc;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 650px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            border-top: 5px solid #0284c7;
+        }
+
+        .company-logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .company-logo span {
+            color: #0284c7;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Highly compatible circular loader layout */
+        .timer-box {
+            position: relative;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 35px auto;
+        }
+
+        .countdown-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            font-size: 36px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        svg {
+            transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
+            width: 120px;
+            height: 120px;
+        }
+
+        circle {
+            stroke-dasharray: 314;
+            stroke-dashoffset: 0;
+            stroke-linecap: round;
+            fill: none;
+            stroke-width: 6;
+        }
+
+        .bg-circle {
+            stroke: #e2e8f0;
+        }
+
+        .progress-circle {
+            stroke: #0284c7;
+            transition: stroke-dashoffset 1s linear;
+            -webkit-transition: stroke-dashoffset 1s linear;
+        }
+
+        /* Quotes Container */
+        .quote-container {
+            min-height: 110px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            padding: 0 20px;
+        }
+
+        .quote-text {
+            font-size: 18px;
+            font-style: italic;
+            color: #1e293b;
+            line-height: 1.6;
+            opacity: 0;
+            transform: translateY(10px);
+            -webkit-transform: translateY(10px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+            -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+        }
+
+        .quote-text.fade-in {
+            opacity: 1;
+            transform: translateY(0);
+            -webkit-transform: translateY(0);
+        }
+
+        /* Accounting Tip Feature Box */
+        .feature-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #166534;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .feature-text {
+            font-size: 13px;
+            color: #1e3a1e;
+        }
+
+        .footer-notice {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #64748b;
+            font-weight: 500;
+        }
+
+        /* Legacy browser-safe blinking dots */
+        .dots {
+            display: inline;
+        }
+        .dot {
+            animation: blink 1.4s infinite both;
+            -webkit-animation: blink 1.4s infinite both;
+        }
+        .dot2 { animation-delay: .2s; -webkit-animation-delay: .2s; }
+        .dot3 { animation-delay: .4s; -webkit-animation-delay: .4s; }
+
+        @keyframes blink {
+            0% { opacity: .2; }
+            20% { opacity: 1; }
+            100% { opacity: .2; }
+        }
+        @-webkit-keyframes blink {
+            0% { opacity: .2; }
+            20% { opacity: 1; }
+            100% { opacity: .2; }
+        }
+    </style>
+</head>
+<body>
+<h1> Welcome To NSC COMPUTERS</h1>
+    <div class="container">
+        <!-- Brand Header -->
+        <div class="company-logo">NSC <span>Computers</span></div>
+        <div class="subtitle">Accounting Software Solutions</div>
+
+        <!-- Animated Progress Clock -->
+        <div class="timer-box">
+            <div class="countdown-number" id="countdown">45</div>
+            <svg>
+                <circle class="bg-circle" cx="60" cy="60" r="50"></circle>
+                <circle class="progress-circle" id="progress" cx="60" cy="60" r="50"></circle>
+            </svg>
+        </div>
+
+        <!-- Dynamic Thoughts / Quotes (Changes every 9 seconds) -->
+        <div class="quote-container">
+            <p class="quote-text" id="quote-display"></p>
+        </div>
+
+        <!-- Accounting Tip Feature Box -->
+        <div class="feature-box">
+            <div class="feature-title">💡 Security Tip of the Day</div>
+            <div class="feature-text">Always back up your financial ledgers to the cloud before closing down your business operations for the weekend.</div>
+        </div>
+
+        <!-- Connection Status Text -->
+        <div class="footer-notice">
+            Verifying secure workspace connection. Please wait<span class="dots"><span class="dot">.</span><span class="dot dot2">.</span><span class="dot dot3">.</span></span>
+        </div>
+    </div>
+
+    <script>
+        // Configuration
+        var totalTime = 45;
+        var timeLeft = totalTime;
+        var timerInterval;
+        var quoteInterval;
+
+        // Custom Business & Motivational Thoughts for Accounting Clients
+        var quotes = [
+            "\"Never take your eyes off the cash flow, for it is the lifeblood of business.\" — Sir Richard Branson",
+            "\"An accurate ledger is the foundation of clear business decisions and lasting growth.\"",
+            "\"Beware of little expenses; a small leak will sink a great ship.\" — Benjamin Franklin",
+            "\"Good accounting is the language of business success. Clear records build clear futures.\"",
+            "\"Automating your numbers gives you back the time to build your actual vision.\""
+        ];
+
+        var quoteIndex = 0;
+        var quoteDisplay = document.getElementById('quote-display');
+        var countdownDisplay = document.getElementById('countdown');
+        var progressCircle = document.getElementById('progress');
+
+        var totalDash = 314; // Circumference of circle
+
+        // Native function to update quote with cross-browser styling
+        function updateQuote() {
+            if(quoteDisplay.classList) {
+                quoteDisplay.classList.remove('fade-in');
+            } else {
+                quoteDisplay.className = "quote-text";
+            }
+            
+            setTimeout(function() {
+                quoteDisplay.textContent = quotes[quoteIndex];
+                if(quoteDisplay.classList) {
+                    quoteDisplay.classList.add('fade-in');
+                } else {
+                    quoteDisplay.className = "quote-text fade-in";
+                }
+                quoteIndex = (quoteIndex + 1) % quotes.length;
+            }, 500);
+        }
+
+        // Initialize first quote
+        updateQuote();
+        
+        // Change quote exactly every 9 seconds
+        quoteInterval = setInterval(updateQuote, 9000);
+
+        // Core Countdown Clock Logic
+        function startTimer() {
+            timerInterval = setInterval(function() {
+                timeLeft--;
+                countdownDisplay.textContent = timeLeft;
+
+                // Update Circle Progress
+                var offset = totalDash - (timeLeft / totalTime) * totalDash;
+                progressCircle.style.strokeDashoffset = offset;
+
+                // Mandatory Redirect at 0 seconds
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    clearInterval(quoteInterval);
+                    window.location.href = "https://nsctimer.nsccomputers.jo3.org";
+                }
+            }, 1000);
+        }
+
+        // Start clock immediately on page load
+        startTimer();
+    </script>
+
+<!-- START: Attractive Custom Portal Link to About Page -->
+<div style="max-width: 550px; margin: 40px auto; padding: 3px; background: linear-gradient(135deg, #0056b3, #00c6ff, #0056b3); border-radius: 12px; box-shadow: 0 10px 25px rgba(0, 86, 179, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease;" 
+     onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 15px 35px rgba(0, 86, 179, 0.25)';" 
+     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 10px 25px rgba(0, 86, 179, 0.15)';"
+     class="nsc-portal-card">
+    
+    <a href="https://www.nsccomputers.jo3.org/aboutgp.html" style="display: block; background: #ffffff; padding: 25px; border-radius: 10px; text-decoration: none; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: background 0.3s ease;"
+       onmouseover="this.style.background='#fafbfc';" 
+       onmouseout="this.style.background='#ffffff';">
+        
+        <!-- Header Tag and Icon Design -->
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+            <span style="font-size: 0.75rem; background: #e6f0fa; color: #0056b3; font-weight: 700; padding: 5px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 1px;">
+                Corporate Profile
+            </span>
+            <!-- Animated Arrow Icon -->
+            <span id="portal-arrow" style="font-size: 1.3rem; color: #0056b3; transition: transform 0.3s ease; font-weight: bold;">
+                ➔
+            </span>
+        </div>
+
+        <!-- Main Heading -->
+        <h3 style="margin: 0 0 8px 0; color: #1a202c; font-size: 1.35rem; font-weight: 800; line-height: 1.3;">
+            Meet Our Founder & Explore NSC Accounting Solutions
+        </h3>
+
+        <!-- Short Teaser Copy -->
+        <p style="margin: 0; color: #4a5568; font-size: 0.95rem; line-height: 1.5;">
+            Discover the corporate vision of Harish Jitendrabhai Solanki and see how our user-defined, windows-based ERP structures adapt dynamically to your workflow.
+        </p>
+    </a>
+</div>
+
+<!-- Script to animate the arrow icon independently when hovering the container -->
+<script>
+(function() {
+    const card = document.querySelector('.nsc-portal-card');
+    const arrow = document.getElementById('portal-arrow');
+    if (card && arrow) {
+        card.addEventListener('mouseenter', () => {
+            arrow.style.transform = 'translateX(6px)';
+        });
+        card.addEventListener('mouseleave', () => {
+            arrow.style.transform = 'translateX(0)';
+        });
+    }
+})();
+</script>
+<!-- END: Attractive Custom Portal Link to About Page -->
+
+
+
+    
+</body>
+</html>
+
+
